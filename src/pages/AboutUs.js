@@ -7,6 +7,7 @@ import React from "react";
 // 2 import Page Containers from components
 import AboutSection from "../components/AboutSection";
 import ServicesSection from "../components/ServicesSection";
+import FaqSection from "../components/FaqSection";
 
 // 2 Das hier wird also nur ein Container
 const AboutUs = () => {
@@ -18,6 +19,7 @@ const AboutUs = () => {
     <>
       <AboutSection />;
       <ServicesSection />;
+      <FaqSection />;
     </>
   );
 };
