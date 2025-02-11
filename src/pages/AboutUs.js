@@ -6,11 +6,20 @@
 import React from "react";
 // 2 import Page Containers from components
 import AboutSection from "../components/AboutSection";
+import ServicesSection from "../components/ServicesSection";
 
 // 2 Das hier wird also nur ein Container
 const AboutUs = () => {
   /* 2 Hier kommen auch FAQSection und ServicesSection usw rein */
-  return <AboutSection />;
+  // 3 Wir brauchen einen parent div, da sonst return immer nur den ersten component zurückgibt
+  // 3 Parent div sieht dann <> und </> aus
+  // 3 Auch darauf achten, dass alles in Klammern eingegrenzt ist
+  return (
+    <>
+      <AboutSection />;
+      <ServicesSection />;
+    </>
+  );
 };
 
 export default AboutUs;
