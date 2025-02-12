@@ -1,6 +1,9 @@
 import React from "react";
+// 5 Global Style hier importieren
+
 // 2 Import pages
 import AboutUs from "./pages/AboutUs";
+import GlobalStyle from "./components/GlobalStyle";
 // 1 Neue Packages nutzen für dieses Projekt (z.b. Animationen) mit
 // 1 - npm install react-router-dom framer-motion react-intersection-observer styled-components
 // 1 In Github ein neues repository erstelllen und um einen Link zu erstellen (Wahrscheinlich einen Link für diese Seite)
@@ -11,6 +14,8 @@ import AboutUs from "./pages/AboutUs";
 function App() {
   return (
     <div className="App">
+      {/* 5 Hier outrendern GloalStyle */}
+      <GlobalStyle />
       <AboutUs />
     </div>
   );
